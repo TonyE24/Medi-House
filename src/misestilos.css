@@ -1,0 +1,177 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  a{
+    color: white;
+    font-size: x-large;
+  }
+
+  .menu{
+    height: 3.3rem;
+  }
+
+  nav{
+    height: 3.3rem;
+  }
+
+  ul{
+    height: 3.3rem;
+  }
+
+  footer{
+    height: 25rem;
+  }
+
+  .footer1{
+    flex: 6;
+  }
+
+  .footer2{
+    flex: 1;
+  }
+
+
+   .btn-transparente {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+ 
+  .btn-transparente:hover {
+    background-color: #fff;
+    color: #000;
+  } 
+
+  .Cont-Login{
+    position: relative;
+    background-image: url("imgs/login/login.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contenedor-formulario{
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario{
+    width: 40%;
+    height: 25rem;
+    background-color: rgba(19, 19, 19, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .inputs-login{
+    width: 20rem;
+  }
+
+  .contenedor-productos {  
+    height: 3000px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #393b3d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr 5fr 5fr 5fr 5fr 5fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "cat1 cat2 cat3 cat4"
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . .";
+    }
+
+  .producto{
+    background-color: #cecece;
+    border-radius: 10px;
+    margin: 10px;
+    }
+
+  .imagenes{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+    }
+
+  .info-producto{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5px;
+  }
+
+  .nombre-producto{
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  .btn-comprar{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #000;
+  }
+  .btn-comprar:hover{
+    background-color: rgb(225, 255, 0);
+    color: rgb(4, 4, 4);
+  }
+
+  .cart{
+    margin: 100px;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    border: #12a1e4;
+    border-style: groove;
+    font-size: 20px;
+  }
+
+  .clear-cart{
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }

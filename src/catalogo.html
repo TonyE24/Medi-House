@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medi-House2</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f48f006b41.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="misestilos.css" />
+  </head>
+  <body>
+    <!-- !Comienza el header -->
+    <header>
+      <div class="flex h-16">
+        <div class="flex-auto w-12 flex justify-center">
+          <div class="text-lg flex items-center">
+            <i class="fa-solid fa-envelope text-2xl mr-2 text-black"></i
+            >Medi-House@gmail.com
+          </div>
+        </div>
+        <div class="flex-auto w-96 flex justify-around">
+          <div class="text-lg flex items-center">
+            <i class="fa-solid fa-phone text-2xl mr-2 text-black"></i>7667-8767
+          </div>
+          <div class="flex items-center">
+            <a href=""
+              ><i class="fa-brands fa-facebook mr-2 text-2xl text-black"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-twitter mr-2 text-2xl text-black"></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa-brands fa-square-instagram mr-2 text-2xl text-black"
+              ></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-tiktok mr-1 text-2xl text-black"></i
+            ></a>
+          </div>
+        </div>
+        <div class="flex-auto w-12 flex justify-center items-center">
+          <button>
+            <i class="fa-solid fa-cart-shopping text-2xl mr-2 text-black"></i
+            >ShopCart
+          </button>
+        </div>
+      </div>
+      <div class="flex h-28">
+        <div class="flex items-center flex-auto justify-center text-2xl">
+          <img
+            src="imgs/logo/log.png"
+            alt=""
+            height="80px"
+            width="80px"
+          />MEDI-HOUSE
+        </div>
+        <div class="flex items-center flex-auto">
+          <input
+            class="search-input w-80 rounded-lg h-11"
+            type="text"
+            name=""
+            id=""
+            placeholder="Que es lo que buscas?"
+          />
+          <button class="search-button ml-5">
+            <i class="fa-solid fa-magnifying-glass text-2xl text-black"></i>
+          </button>
+        </div>
+      </div>
+      <div class="menu bg-black w-full">
+        <nav>
+          <ul class="flex items-center">
+            <li class="flex-auto flex justify-center">
+              <a class="no-underline btn btn-transparente" href="./index.html">INICIO</a>
+            </li>
+            <li class="flex-auto flex justify-center">
+              <a class="no-underline btn btn-transparente" href="catalogo.html">CATALOGO</a>
+            </li>
+            <li class="flex-auto flex justify-center">
+              <div class="dropdown">
+                <a class="btn btn-transparente dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Equipos de Diagnostico Medico</a></li>
+                  <li><a class="dropdown-item" href="#">Mobiliario Medico</a></li>
+                  <li><a class="dropdown-item" href="#">Equipo de Electrocirugia</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="flex-auto flex justify-center">
+              <div class="dropdown">
+                <a class="btn btn-transparente dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LOGIN | SINGUP
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="login.html">Inicia Sesion</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- !Termina el header -->
+
+    <!-- !Comienza contenedor de catalogo -->
+    <section class="contenedor-productos">
+        <div class="producto" data-id="1" data-producto="estetoscopio doble" data-precio="2000.00">
+            <img class="imagenes" src="imgs/categorias/equipos diagnostico/estetoscopio-doble-hand.png" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Estetoscopio</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$2000.00</span> 
+                <p class="caracteristica-producto">MARCA: LITTMAN</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="2" data-producto="oftalmoscopio" data-precio="3400.00">
+            <img class="imagenes" src="imgs/categorias/equipos diagnostico/oftalmoscopio.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Oftalmoscopio</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$3400.00</span> 
+                <p class="caracteristica-producto">MARCA: GUTHMANN</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="3" data-producto="otoscopio" data-precio="2300.00">
+            <img class="imagenes" src="imgs/categorias/equipos diagnostico/otoscopio.webp" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Otoscopio</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$2300.00</span> 
+                <p class="caracteristica-producto">MARCA: RIESTER</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="4" data-producto="electrocardeografo" data-precio="4000.00">
+            <img class="imagenes" src="imgs/categorias/equipos diagnostico/electrocardeografo.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Electrocardeografo</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$4000.00</span> 
+                <p class="caracteristica-producto">MARCA: SCHILLER</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="5" data-producto="silla de ruedas" data-precio="1200.00">
+            <img class="imagenes" src="imgs/categorias/mobiliario medico/14345504_Silla_Dinalife.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Silla de ruedas</h2>
+                <span class="categoria">Categoria: Mobiliario medico</span>
+                <span class="precio">$1200.00</span> 
+                <p class="caracteristica-producto">MARCA: MOBICARE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="6" data-producto="cama hospitalaria" data-precio="2500.00">
+            <img class="imagenes" src="imgs/categorias/mobiliario medico/cama hospitalaria.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Cama Hospitalaria</h2>
+                <span class="categoria">Categoria: Mobiliario medico</span>
+                <span class="precio">$2500.00</span> 
+                <p class="caracteristica-producto">MARCA: DREAMLAND</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="7" data-producto="carro medicamentos" data-precio="1700.00">
+            <img class="imagenes" src="imgs/categorias/mobiliario medico/carro medicamentos.webp" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Carro para medicamentos</h2>
+                <span class="categoria">Categoria: Mobiliario medico</span>
+                <span class="precio">$1700.00</span> 
+                <p class="caracteristica-producto">MARCA: BAME</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="8" data-producto="lampara de examen" data-precio="1000.00">
+            <img class="imagenes" src="imgs/categorias/mobiliario medico/lampara de exmanen medico.webp" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Lampara de examen</h2>
+                <span class="categoria">Categoria: Mobiliario medico</span>
+                <span class="precio">$1000.00</span> 
+                <p class="caracteristica-producto">MARCA: HAEBERLE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="9" data-producto="electrobisturi" data-precio="2700.00">
+            <img class="imagenes" src="imgs/categorias/electrocirugia/D_NQ_NP_667942-MLA51948177088_102022-O.webp" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Electro Bisturi</h2>
+                <span class="categoria">Categoria: Electrocirugia</span>
+                <span class="precio">$2700.00</span> 
+                <p class="caracteristica-producto">MARCA: VALLEY LAB</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="10" data-producto="generador de electrocirugia" data-precio="2900.00">
+            <img class="imagenes" src="imgs/categorias/electrocirugia/GENERADOR ELECTRO.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Generador de Electrocirugía</h2>
+                <span class="categoria">Categoria: Electrocirugia</span>
+                <span class="precio">$2900.00</span> 
+                <p class="caracteristica-producto">MARCA: BOVIE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="11" data-producto="electrocoaguladores" data-precio="1200.00">
+            <img class="imagenes" src="imgs/categorias/electrocirugia/ELECTROCOAGU.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Electrocoaguladores</h2>
+                <span class="categoria">Categoria: Electrocirugia</span>
+                <span class="precio">$1200.00</span> 
+                <p class="caracteristica-producto">MARCA: RYEMED</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="12" data-producto="cauterio" data-precio="1800.00">
+            <img class="imagenes" src="imgs/categorias/electrocirugia/Cauterios.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Cauterios</h2>
+                <span class="categoria">Categoria: Electrocirugia</span>
+                <span class="precio">$1800.00</span> 
+                <p class="caracteristica-producto">MARCA: WELCH ALLYN</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="13" data-producto="monitor de capnografia" data-precio="4500.00">
+            <img class="imagenes" src="imgs/categorias/signos vitales/timthumb.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Monitor de Capnografía</h2>
+                <span class="categoria">Categoria: Monitores de signos vitales</span>
+                <span class="precio">$4500.00</span> 
+                <p class="caracteristica-producto">MARCA: BESTMAN</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="14" data-producto="monitor de frecuencia respiratoria" data-precio="2600.00">
+            <img class="imagenes" src="imgs/categorias/signos vitales/Monitor de Frecuencia Respiratoria.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Monitor de Frecuencia Respiratoria</h2>
+                <span class="categoria">Categoria: Monitores de signos vitales</span>
+                <span class="precio">$2600</span> 
+                <p class="caracteristica-producto">MARCA: MICROLIFE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="15" data-producto="monitor de presion arterial" data-precio="2940.00">
+            <img class="imagenes" src="imgs/categorias/signos vitales/Monitor de Presión Arterial.png" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Monitor de Presión Arterial</h2>
+                <span class="categoria">Categoria: Monitores de signos vitales</span>
+                <span class="precio">$2940.00</span> 
+                <p class="caracteristica-producto">MARCA: OMROM</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="16" data-producto="pulsioximetro" data-precio="2360.00">
+            <img class="imagenes" src="imgs/categorias/signos vitales/Pulsioxímetro.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Pulsioxímetro</h2>
+                <span class="categoria">Categoria: Monitores de signos vitales</span>
+                <span class="precio">$2360.00</span> 
+                <p class="caracteristica-producto">MARCA: MESI</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="17" data-producto="equipo de electroterpia" data-precio="2070.00">
+            <img class="imagenes" src="imgs/categorias/fisioterapia/electroterapia.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Equipo de Electroterapia</h2>
+                <span class="categoria">Categoria: Equipo de fisioterapia</span>
+                <span class="precio">$2070.00</span> 
+                <p class="caracteristica-producto">MARCA: TENSCARE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="18" data-producto="equipo de magnetoterapia" data-precio="2120.00">
+            <img class="imagenes" src="imgs/categorias/fisioterapia/mag3t-magnetoterapia.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Equipo de magnetoterapia</h2>
+                <span class="categoria">Categoria: Equipo de fisioterapia</span>
+                <span class="precio">$2120.00</span> 
+                <p class="caracteristica-producto">MARCA: AVS</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="19" data-producto="equipo de traccion" data-precio="2420.00">
+            <img class="imagenes" src="imgs/categorias/fisioterapia/camilla-con-equipo-de-traccion-.png" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Equipos de Tracción</h2>
+                <span class="categoria">Categoria: Equipo de fisioterapia</span>
+                <span class="precio">$2420.00</span> 
+                <p class="caracteristica-producto">MARCA: POLAR</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="20" data-producto="monitor de frecuencia respiratoria" data-precio="2870.00">
+            <img class="imagenes" src="imgs/categorias/fisioterapia/BIOFEED.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Equipo Biofeedback</h2>
+                <span class="categoria">Categoria: Equipo de fisioterapia</span>
+                <span class="precio">$2870.00</span> 
+                <p class="caracteristica-producto">MARCA: VIRYE</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="21" data-producto="ecografo" data-precio="2000.00">
+            <img class="imagenes" src="imgs/categorias/ultrasonido/ecografo.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Ecografo convencional</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$2000.00</span> 
+                <p class="caracteristica-producto">MARCA: TOSHIBA</p> 
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="22" data-producto="ecografo3d" data-precio="2700.00">
+            <img class="imagenes" src="imgs/categorias/ultrasonido/ECOGRAFO 3D.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Ecografo 3d</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$2700.00</span> 
+                <p class="caracteristica-producto">MARCA: SIEMENS</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="23" data-producto="ecografo de elastografia" data-precio="2000.00">
+            <img class="imagenes" src="imgs/categorias/ultrasonido/ecografo de elastografia.jpg" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Ecografo elastografia</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$200.000</span> 
+                <p class="caracteristica-producto">Estetoscopio blanco</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+        <div class="producto" data-id="24" data-producto="estetoscopio" data-precio="2000.00">
+            <img class="imagenes" src="imgs/categorias/equipos diagnostico/estetoscopio-doble-hand.png" alt="" srcset="">
+            <div class="info-producto">
+                <h2 class="nombre-producto text-center">Estetoscopio</h2>
+                <span class="categoria">Categoria: Equipo diagnostico</span>
+                <span class="precio">$2000.00</span> 
+                <p class="caracteristica-producto">Estetoscopio blanco</p>
+                <button class="btn-comprar add-to-cart">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <!-- !Termina contenedor productos -->
+
+    <!-- !carrito de compras -->
+    <section class="cart">
+        <h2>carrito de compras</h2>
+        <ul class="cart-list"></ul>
+        <p class="total">Total de la compra: $<span> 0.00</span></p>
+        <button class="clear-cart">Limpiar</button>
+    </section>
+
+    <!-- !Inicia el footer -->
+    <footer class="flex flex-col">
+      <div class="footer1 flex">
+        <!-- !cuadro 1 -->
+        <div
+          class="flex-auto bg-black flex flex-col items-center justify-around"
+        >
+          <div class="">
+            <img src="imgs/logo/log.png" alt="" height="70px" width="70px" />
+          </div>
+          <p class="text-white text-lg">
+            Direccion: San Salvador, El Salvador.
+          </p>
+          <p class="text-white text-lg">Telefono: +7234-2343</p>
+          <p class="text-white text-lg">Correo:Medi-House@gmail.com</p>
+        </div>
+        <!-- !cuadro 2 -->
+        <div
+          class="flex-auto bg-black flex flex-col justify-around items-center"
+        >
+          <h4 class="text-white">Informacion</h4>
+          <p class="text-white text-lg">Quienes Somos?</p>
+          <p class="text-white text-lg">Contactenos</p>
+          <p class="text-white text-lg">Servicios</p>
+        </div>
+        <!-- !cuadro 3 -->
+        <div
+          class="flex-auto bg-black flex flex-col justify-around items-center"
+        >
+          <h4 class="text-white">Mi cuenta</h4>
+          <p class="text-white text-lg">Cuenta</p>
+          <p class="text-white text-lg">Carrito de compras</p>
+          <p class="text-white text-lg">Catalogo</p>
+        </div>
+        <!-- !cuadro 4 -->
+        <div
+          class="flex-auto bg-black flex flex-col justify-around items-center"
+        >
+          <h4 class="text-white">Compra en nuestra tienda!</h4>
+          <p class="text-white text-xl">
+            Recibe las mejores ofertas dejanos tu correo
+          </p>
+          <div>
+            <input class="text-2xl" type="text" name="" id="" /><button
+              class="bg-yellow-500 pl-2 pr-2 text-2xl"
+            >
+              SUSCRIBETE
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- !Seccion de derechos -->
+      <div class="bg-black footer2 flex justify-around">
+        <p class="flex items-center h-full text-white text-2xl">
+          Copyright ©2024 All Rights Reserved
+        </p>
+        <div class="flex items-center text-white text-2xl">LOS MASTERS</div>
+      </div>
+    </footer>
+    <!-- !Termina el footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrito.js"></script>
+    <script src="javascript/busqueda.js"></script>
+    <script src="javascript/catalogo.js"></script>
+  </body>
+</html>
